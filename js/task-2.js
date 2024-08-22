@@ -25,5 +25,15 @@ const images = [
   }
 ];
 
-const gallery = document.querySelectorAll('.gallery');
-console.log(gallery);
+const gallery = document.querySelector('.gallery');
+
+function createMarkup(images){
+  return images.map(({url,alt}) => {
+  return  `<li class="list-item">
+    <img src="${url}" alt="${alt}" width=400>
+      </li>`
+}).join('')
+};
+
+gallery.insertAdjacentHTML('afterbegin', createMarkup(images));
+
