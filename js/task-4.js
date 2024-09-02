@@ -10,15 +10,16 @@ const {email , password} = event.currentTarget.elements;
 // console.log(email.value);
 // console.log(password.value);
 
+if (email.value.trim() === '' || password.value.trim() === ''){
+   alert(`All form fields must be filled in`);
+}
+
 const data = {
-email : email.value.trim(),
-password: password.value.trim()
+email : email.value,
+password: password.value
 }
 console.log(data);
 
-if (email.value === '' || password.value === ''){
-   alert(`All form fields must be filled in`);
-}
 
 event.currentTarget.reset();
 
