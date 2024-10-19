@@ -21,26 +21,6 @@ function updateInputValue(event) {
   console.log("🚀 ~ inputValue ~ inputValue:", inputValue)
 }
 
-// function createElements (event) {
-
-//   const squares = document.querySelectorAll('.square');
-
-//   squares.forEach(square => square.remove());
-
-//   if (inputValue >= 1 && inputValue <= 100) {
-//     for (let i = 0; i < inputValue; i++) {
-//       const square = document.createElement("div");
-//       square.classList.add("square");
-//       square.style.width = `${30 + i * 10}px`;
-//       square.style.height = `${30 + i * 10}px`;
-//       square.style.backgroundColor = getRandomHexColor();
-//       boxes.append(square);
-      
-//     } 
-//   }
-//   input.value = "";
-
-// }
 
 function createElements(event) {
   const squares = document.querySelectorAll('.square');
